@@ -49,17 +49,12 @@ const Movies = ({ match }) => {
 
     return isLoading ? <span>chargement</span> : (
 
-        // series.map((serie) => {
-        //     return
-      
         <div className="container mt-2">
-
-        <Breadcrumb>
-        <Breadcrumb.Item href="/profil">Mon profil</Breadcrumb.Item>
-        <Breadcrumb.Item href="/mymovies">Mes films</Breadcrumb.Item>
-        <Breadcrumb.Item active>{movie.original_title}</Breadcrumb.Item>
-        </Breadcrumb>
-
+            <Breadcrumb>
+            <Breadcrumb.Item href="/profil">Mon profil</Breadcrumb.Item>
+            <Breadcrumb.Item href="/mymovies">Mes films</Breadcrumb.Item>
+            <Breadcrumb.Item active>{movie.original_title}</Breadcrumb.Item>
+            </Breadcrumb>
         <h1 class="text-center my-4 text-primary">{movie.original_title}</h1>
 
         <div  class="d-flex justify-content-between">
@@ -99,37 +94,8 @@ const Movies = ({ match }) => {
                 </div>
                 <Button variant="danger" onClick={handleFavori}> Ajouter au favoris <FaHeart class="mb-1 ms-1"/> </Button>
             </div>
-
-
         </div>
-        // })
     );
-    // return (
-    //     <div className="component-display">
-    //
-    //         {
-    //             errorsList.length === 0 && (
-    //                 <div>
-    //                     <img src={movie.poster}/>
-    //                 </div>
-    //             )
-    //         }
-    //
-    //         {
-    //             errorsList.length === 0 && (
-    //                 <div>
-    //                     <h1>{movie.title}</h1>
-    //                     <p>Description : {movie.synopsis}</p>
-    //                     <p>Année de production : {movie.production_year}</p>
-    //                     <p>Producteur : {movie.director}</p>
-    //                     <p>Followers : {movie.followers}</p>
-    //                 </div>
-    //
-    //             )
-    //         }
-    //     </div>
-    //
-    // )
 
 };
 export default Movies;
