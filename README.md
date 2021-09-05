@@ -2,7 +2,7 @@
 React app using Betaseries's API 
 
 
-## HOW TO
+> HOW TO
 
 You must clone or download this repository and go with your terminal in "previouslyon" folder. You can just ```npm install``` and ```npm start```.
 
